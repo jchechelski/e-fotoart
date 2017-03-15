@@ -21,13 +21,15 @@ $body-border-height: 5px;
 // top border
 body {
     padding-top: $body-border-height;
-}
-body:before {
-    content: "";
-    position: fixed;
-    background: rgb(168,23,13);
-    top:0;
-    left: 0;
-    right: 0;
-    height: $body-border-height;
+    //middle bg
+    background: $lightgray;
+    &:before {
+        content: "";
+        position: fixed;
+        background: rgb(168,23,13);
+        top:0;
+        left: 0;
+        right: 0;
+        height: $body-border-height;
+    }
 }
