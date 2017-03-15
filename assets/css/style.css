@@ -1,3 +1,16 @@
+.darkgray-bg {
+  background: #171515; }
 
+body {
+  padding-top: 5px; }
+
+body:before {
+  content: "";
+  position: fixed;
+  background: #a8170d;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px; }
 
 /*# sourceMappingURL=style.css.map */

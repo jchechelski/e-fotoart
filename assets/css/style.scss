@@ -1,3 +1,24 @@
+// colors
 $gray: #d2d2d2;
 $darkgray: #171515;
 
+//sizes
+$body-border-height: 5px;
+
+.darkgray-bg {
+    background: $darkgray;
+}
+
+// top border
+body {
+    padding-top: $body-border-height;
+}
+body:before {
+    content: "";
+    position: fixed;
+    background: rgb(168,23,13);
+    top:0;
+    left: 0;
+    right: 0;
+    height: $body-border-height;
+}
