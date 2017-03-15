@@ -1,6 +1,12 @@
 .darkgray-bg {
   background: #171515; }
 
+.lightgray-bg {
+  background: #d2d2d2; }
+
+.menu-bg {
+  background: #d71d11; }
+
 body {
   padding-top: 5px; }
 

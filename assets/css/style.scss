@@ -1,12 +1,21 @@
 // colors
-$gray: #d2d2d2;
+$lightgray: #d2d2d2;
 $darkgray: #171515;
+$menu-bg: rgb(168,23,13);
 
 //sizes
 $body-border-height: 5px;
 
 .darkgray-bg {
     background: $darkgray;
+}
+
+.lightgray-bg {
+    background: $lightgray;
+}
+
+.menu-bg {
+    background: lighten($menu-bg, 10%);
 }
 
 // top border
