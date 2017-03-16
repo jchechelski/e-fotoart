@@ -35,7 +35,7 @@ $body-border-height: 5px;
     padding: 100px;
 }
 //realizacje
-.container-realizacje { 
+#container-realizacje { 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -49,6 +49,7 @@ body {
     &:before {
         content: "";
         position: fixed;
+        z-index: 1000;
         background: rgb(168,23,13);
         top:0;
         left: 0;

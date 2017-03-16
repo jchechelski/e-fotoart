@@ -20,7 +20,7 @@
   margin: 20px 0;
   padding: 100px; }
 
-.container-realizacje {
+#container-realizacje {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,6 +32,7 @@ body {
   body:before {
     content: "";
     position: fixed;
+    z-index: 1000;
     background: #a8170d;
     top: 0;
     left: 0;
