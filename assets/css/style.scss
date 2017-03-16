@@ -35,16 +35,11 @@ $body-border-height: 5px;
     padding: 100px;
 }
 //realizacje
-.container-realizacje {
-   
-    
-    div{
-        text-align: center;
-        
-        img{
-           vertical-align: middle; 
-        }
-    }
+.container-realizacje { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 // top border
 body {
