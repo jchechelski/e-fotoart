@@ -23,11 +23,15 @@ $body-border-height: 5px;
     background: $white;
 }
 
+.footer-bg {
+    background: lighten($darkgray, 50%);
+}
+
 .middle-content {
     background: $white;
     width: 100%;
     height: 100%;
-    margin: 10px;
+    margin: 20px 0;
     padding: 100px;
 }
 
@@ -45,4 +49,12 @@ body {
         right: 0;
         height: $body-border-height;
     }
+}
+
+footer {
+    background: $darkgray;
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
 }
