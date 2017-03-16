@@ -20,6 +20,11 @@
   margin: 20px 0;
   padding: 100px; }
 
+.container-realizacje div {
+  text-align: center; }
+  .container-realizacje div img {
+    vertical-align: middle; }
+
 body {
   padding-top: 5px;
   background: #d2d2d2; }

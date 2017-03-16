@@ -34,7 +34,18 @@ $body-border-height: 5px;
     margin: 20px 0;
     padding: 100px;
 }
-
+//realizacje
+.container-realizacje {
+   
+    
+    div{
+        text-align: center;
+        
+        img{
+           vertical-align: middle; 
+        }
+    }
+}
 // top border
 body {
     padding-top: $body-border-height;
