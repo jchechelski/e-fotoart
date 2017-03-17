@@ -1,4 +1,7 @@
-var realizacje = document.getElementById('container-realizacje'),
+
+
+function randomRealizacje() {
+  var realizacje = document.getElementById('container-realizacje'),
     realizacjeLists = realizacje.children,
     realizacjeLength = realizacjeLists.length;
 
@@ -9,10 +12,14 @@ for(var i=0; i<realizacjeLength; i++) {
 
     if(tab.indexOf(los) == -1) {
         tab.push(los);
-       realizacjeLists[i].innerHTML = '<img src="../../img/realizacje/'+los+'.png" class="img-responsive" alt="">'; 
+       realizacjeLists[i].innerHTML = '<img src="img/realizacje/'+los+'.png" class="img-responsive" alt="">'; 
     } else {
         i--;
     }   
+}  
 }
 
+randomRealizacje();
+
+setInterval(randomRealizacje, 2000);
 
