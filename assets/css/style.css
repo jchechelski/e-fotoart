@@ -116,34 +116,42 @@ footer {
   border-right-width: 1px; }
 
 .show-anime {
-  animation: show 5s 1; }
+  animation: show 1s 1; }
 
 .hide-anime {
-  animation: hide 5s 1;
-  animation-delay: 2s;
-  animation-fill-mode: forwards; }
+  animation: hide 4s 1; }
 
 @keyframes show {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0.2); }
   25% {
-    opacity: .3; }
+    opacity: .1;
+    transform: scale(0.4); }
   50% {
-    opacity: .5; }
+    opacity: .2;
+    transform: scale(0.6); }
   75% {
-    opacity: .7; }
+    opacity: .3;
+    transform: scale(0.8); }
   100% {
-    opacity: 1; } }
+    opacity: .4;
+    transform: scale(1); } }
 @keyframes hide {
   0% {
-    opacity: 1; }
+    opacity: .5;
+    transform: scale(1); }
   25% {
-    opacity: .7; }
+    opacity: .4;
+    transform: scale(0.8); }
   50% {
-    opacity: .5; }
+    opacity: .3;
+    transform: scale(0.6); }
   75% {
-    opacity: .3; }
+    opacity: .2;
+    transform: scale(0.3); }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    transform: scale(0); } }
 
 /*# sourceMappingURL=style.css.map */

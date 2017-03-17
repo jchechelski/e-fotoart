@@ -1,27 +1,68 @@
 
 
 function randomRealizacje() {
-  var realizacje = document.getElementById('container-realizacje'),
+  
+}
+
+//randomRealizacje();
+
+
+function showRealizacje() {
+    var realizacje = document.getElementById('container-realizacje'),
     realizacjeLists = realizacje.children,
     realizacjeLength = realizacjeLists.length;
 
 var tab = [];
+    
+    
+    // function to check exists class
+    
 
 for(var i=0; i<realizacjeLength; i++) {
     los = Math.floor(1+Math.random()*6);
 
     if(tab.indexOf(los) == -1) {
         tab.push(los);
-       realizacjeLists[i].innerHTML = '<img src="img/realizacje/'+los+'.png" class="img-responsive" alt="">'; 
+        
+       realizacjeLists[i].innerHTML = '<img src="img/realizacje/'+los+'.png" class="img-responsive show-anime" alt="">'; 
     } else {
         i--;
     }   
 }  
 }
 
-randomRealizacje();
+function hideRealizacje() {
+      var realizacje = document.getElementById('container-realizacje'),
+    realizacjeLists = realizacje.children,
+    realizacjeLength = realizacjeLists.length;
 
-setInterval(randomRealizacje, 2000);
+var tab = [];
+    
+    
+ 
+
+for(var i=0; i<realizacjeLength; i++) {
+    los = Math.floor(1+Math.random()*6);
+
+    if(tab.indexOf(los) == -1) {
+        tab.push(los);
+
+       realizacjeLists[i].innerHTML = '<img src="img/realizacje/'+los+'.png" class="img-responsive hide-anime" alt="">'; 
+    } else {
+        i--;
+    }   
+}  
+} 
+showRealizacje();
+setInterval(function() {
+    
+    setTimeout(hideRealizacje, 3000);
+    setTimeout(showRealizacje, 6000);
+    
+},15000)
+
+//setInterval(hideRealizacje, 4000);
+//setInterval(showRealizacje, 5000);
 
 
 
