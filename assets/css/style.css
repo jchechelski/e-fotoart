@@ -1,3 +1,6 @@
+::selection {
+  background: red; }
+
 .darkgray-bg {
   background: #171515; }
 
@@ -12,6 +15,26 @@
 
 .footer-bg {
   background: #1b1b1b; }
+
+.menu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff; }
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .menu ul li {
+      display: inline-block; }
+      .menu ul li a {
+        display: block;
+        padding: 10px;
+        background: #d2d2d2;
+        text-decoration: none; }
+        .menu ul li a:hover {
+          opacity: .5; }
 
 .middle-content {
   background: #fff;
@@ -30,7 +53,8 @@
 
 body {
   padding-top: 5px;
-  background: #d2d2d2; }
+  background: #d2d2d2;
+  font-family: 'Lato', sans-serif; }
   body:before {
     content: "";
     position: fixed;
