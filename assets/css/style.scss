@@ -96,9 +96,60 @@ body {
 
 footer {
     background: $darkgray;
-    color: $white;
+    color: #9a9393;
     text-align: center;
     font-size: 12px;
     padding: 10px 0;   
+}
+
+.footer-col {
+    padding: 20px 0 10px 0;
+    color: $white;
+    font-family: 'Ubuntu', sans-serif;
+    h3, h5 {
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        border-bottom: 1px solid rgba($white, .16);
+        text-align: center;
+    }
+    .footer-input {
+        width: 70%;
+        background: #3b3b3b;
+        border: none;
+        color: #9a9393;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 10px;
+        float: left;
+    }
+    .footer-submit{
+        width: 20%;
+        border: none;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        background: #3b3b3b;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    span {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .ico-footer {
+        font-size: 60px;
+        color: #9a9393;
+        text-align: center;
+        opacity: .1;
+    }
+}
+
+.border-footer {
+    border-right-color: rgba($white, .16);
+    border-right-style: solid;
+    border-right-width: 1px;
 }
 
