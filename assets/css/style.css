@@ -115,4 +115,35 @@ footer {
   border-right-style: solid;
   border-right-width: 1px; }
 
+.show-anime {
+  animation: show 5s 1; }
+
+.hide-anime {
+  animation: hide 5s 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .3; }
+  50% {
+    opacity: .5; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: 1; } }
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: .7; }
+  50% {
+    opacity: .5; }
+  75% {
+    opacity: .3; }
+  100% {
+    opacity: 0; } }
+
 /*# sourceMappingURL=style.css.map */
