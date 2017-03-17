@@ -26,14 +26,14 @@ setInterval(randomRealizacje, 2000);
 
 
 // funkcja do napisania na jutro
-var cialo = document.querySelector('.menu-bg');
-window.addEventListener('scroll', function() {
-    console.log(document.body.scrollTop);
-    
-    var licz = document.body.scrollTop / 3;
-    cialo.style.marginTop = ''+licz+'px';
-    
-})
+//var cialo = document.querySelector('.menu-bg');
+//window.addEventListener('scroll', function() {
+//    console.log(document.body.scrollTop);
+//    
+//    var licz = document.body.scrollTop / 3;
+//    cialo.style.marginTop = ''+licz+'px';
+//    
+//})
 
 
 
