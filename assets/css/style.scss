@@ -155,21 +155,42 @@ footer {
 // animacje
 
 .show-anime{
-   animation:show 1s 1;
+   animation:show 1s;
+animation-iteration-count: 1;
+    animation-fill-mode: forwards;
    
 }
 
 .hide-anime {
-    animation: hide 4s 1;
+    animation: hide 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+//    animation: hide 1s 1;
+    opacity: 0;
 }     
       
+
 @keyframes show {
-    0% {opacity: 0; transform: scale(.2)}
-    25% {opacity: .1; transform: scale(.4)}
-    50% {opacity: .2; transform: scale(.6)}
-    75% {opacity: .3; transform: scale(.8) }
-    100% {opacity: .4; transform: scale(1)}
+@for $i from 1 through 100 {
+ 
+    #{$i * 1%} {opacity: $i/20; transform: scale($i/100)}
+ 
 }
+}
+
+//@keyframes hide {
+//    @for $j from 100 through 1 {
+//        #{($j - (-99)) * 1%} {opacity: $j/20; transform: scale($j/100)}
+//    }
+//}
+
+//@keyframes show {
+//    0% {opacity: 0; transform: scale(.2)}
+//    25% {opacity: .1; transform: scale(.4)}
+//    50% {opacity: .2; transform: scale(.6)}
+//    75% {opacity: .3; transform: scale(.8) }
+//    100% {opacity: .4; transform: scale(1)}
+//}
 
 @keyframes hide {
     0% {opacity: .5; transform: scale(1)}
