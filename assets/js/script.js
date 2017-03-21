@@ -30,12 +30,10 @@ function hideRealizacje() {
 }  
 } 
 showRealizacje();
-setInterval(function() {
-    
-    setTimeout(hideRealizacje, 3000);
-    setTimeout(showRealizacje, 4300);
-    
-},10000)
+
+    setInterval(hideRealizacje, 3000);
+    setInterval(showRealizacje, 4300);
+
 
 //setInterval(hideRealizacje, 3000);
 //setInterval(showRealizacje, 6000);
