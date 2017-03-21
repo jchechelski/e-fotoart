@@ -148,7 +148,10 @@ footer {
         color: #9a9393;
         text-align: center;
         opacity: .1;
-        margin-top: 20px;
+        top: 100px;
+        right: 0;
+        position: absolute;
+        
     }
     ul {
         list-style: none;
@@ -209,7 +212,7 @@ footer {
     border-right-color: rgba($white, .16);
     border-right-style: solid;
     border-right-width: 1px;
-    min-height: 170px;
+    min-height: 180px;
     max-height: 250px;
 }
 // animacje
