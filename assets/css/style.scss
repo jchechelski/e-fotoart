@@ -74,8 +74,7 @@ $body-border-height: 5px;
     justify-content: center;
     align-items: center;
     opacity: .5;
-    margin-bottom: 10px;
-    height: 200px;
+    height: 100px;
 }
 // top border
 body {
@@ -217,9 +216,12 @@ footer {
 
 .show-anime{
    animation:show 1s;
-animation-iteration-count: 1;
+    animation-iteration-count: 1;
     animation-fill-mode: forwards;   
     -webkit-animation-fill-mode: forwards;
+    display: block;
+    margin: 0 auto;
+
 }
 
 .hide-anime {
@@ -227,8 +229,11 @@ animation-iteration-count: 1;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    
 //    animation: hide 1s 1;
     opacity: 0;
+    display: block;
+    margin: 0 auto;
 }     
       
 

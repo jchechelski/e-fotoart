@@ -10,16 +10,16 @@ function showRealizacje() {
     // function to check exists class
     var tab = [];
 
-for(var i=0; i<realizacjeLength; i++) {
-    var los = Math.floor(1+Math.random()*6);
-     
-    if(tab.indexOf(los) == -1) {
-        tab.push(los);
-       realizacjeLists[i].innerHTML = '<img src="img/realizacje/'+los+'.png" class="img-responsive show-anime" alt="">'; 
-    } else {
-        i--;
-    }   
-}  
+    for(var i=0; i<realizacjeLength; i++) {
+        var los = Math.floor(1+Math.random()*9);
+        
+        if(tab.indexOf(los) == -1) {
+            tab.push(los);
+           realizacjeLists[i].innerHTML = '<img src="img/realizacje/'+los+'.png" class="img-responsive show-anime" alt="">'; 
+        } else {
+            i--;
+        }   
+    }  
 }
 
 function hideRealizacje() {
@@ -31,12 +31,17 @@ function hideRealizacje() {
 } 
 showRealizacje();
 
-    setInterval(hideRealizacje, 3000);
-    setInterval(showRealizacje, 4300);
+//    setInterval(hideRealizacje, 13000);
+//    setInterval(showRealizacje, 14200);
 
 
-//setInterval(hideRealizacje, 3000);
-//setInterval(showRealizacje, 6000);
+setInterval(function() {
+    setTimeout(hideRealizacje, 1000);
+    setTimeout(showRealizacje, 2100);
+},5000);
+
+
+
 
 
 
