@@ -31,9 +31,6 @@ function hideRealizacje() {
 } 
 showRealizacje();
 
-//    setInterval(hideRealizacje, 13000);
-//    setInterval(showRealizacje, 14200);
-
 
 setInterval(function() {
     setTimeout(hideRealizacje, 1000);
